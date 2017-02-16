@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/res/merged/debug/layout/header_image.xml",
+        "source": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/res/layout/header_image.xml"
+    },
+    {
+        "merged": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/res/merged/debug/layout/wallpaper_image.xml",
+        "source": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/res/layout/wallpaper_image.xml"
+    },
+    {
+        "merged": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/res/merged/debug/layout/content_browse.xml",
+        "source": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/res/layout/content_browse.xml"
+    },
+    {
+        "merged": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/res/merged/debug/layout/content_wallpapers.xml",
+        "source": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/res/layout/content_wallpapers.xml"
+    },
+    {
+        "merged": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/res/merged/debug/layout/spinner_item.xml",
+        "source": "/home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/res/layout/spinner_item.xml"
+    }
+]

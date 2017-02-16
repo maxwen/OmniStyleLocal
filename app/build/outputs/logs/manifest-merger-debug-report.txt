@@ -1,0 +1,161 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:17:1-125:12
+	package
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:18:5-37
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:20:5-30
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:19:5-28
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:17:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:23:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:24:5-81
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:24:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:25:5-80
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:25:22-77
+uses-sdk
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:27:5-29:41
+MERGED from [com.android.support:support-v13:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:support-v4:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:cardview-v7:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v13:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/AndroidManifest.xml:23:9-52
+	android:targetSdkVersion
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:29:9-38
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:28:9-35
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+		INJECTED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:31:5-124:19
+MERGED from [com.android.support:support-v13:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-v13/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:25.0.0] /home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:33:9-34
+	android:allowBackup
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:32:9-36
+	android:icon
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:34:9-46
+activity#org.omnirom.omnistyle1.BrowseHeaderActivity
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:35:9-44:20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:37:13-50
+	android:theme
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:38:13-67
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:36:13-71
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:39:13-43:29
+action#android.intent.action.MAIN
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:40:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:42:17-76
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:42:27-73
+activity#org.omnirom.omnistyle1.BrowseWallsActivity
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:45:9-54:20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:47:13-49
+	android:theme
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:48:13-67
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:46:13-70
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT+android.intent.category.LAUNCHER
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:49:13-53:29
+category#android.intent.category.LAUNCHER
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:51:17-77
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:51:27-74
+activity-alias#org.omnirom.omnistyle1.WallpaperActivity
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:55:9-64:26
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:57:13-47
+	android:targetActivity
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:59:13-80
+	android:theme
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:58:13-67
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:56:13-46
+intent-filter#android.intent.action.SET_WALLPAPER+android.intent.category.DEFAULT
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:60:13-63:29
+action#android.intent.action.SET_WALLPAPER
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:61:17-78
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:61:25-75
+activity#org.omnirom.omnistyle1.weather_color
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:65:9-73:20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:67:13-46
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:66:13-42
+intent-filter#android.intent.category.DEFAULT+org.omnirom.WeatherIconPack
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:68:13-72:29
+action#org.omnirom.WeatherIconPack
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:69:17-70
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:69:25-67
+activity#org.omnirom.omnistyle1.nature
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:75:9-83:20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:77:13-35
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:76:13-35
+intent-filter#android.intent.category.DEFAULT+org.omnirom.DaylightHeaderPack1
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:78:13-82:29
+action#org.omnirom.DaylightHeaderPack1
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:79:17-74
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:79:25-71
+activity#org.omnirom.omnistyle1.poly
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:85:9-93:20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:87:13-33
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:86:13-33
+activity#org.omnirom.omnistyle1.naturerandom
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:95:9-103:20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:97:13-44
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:96:13-41
+activity#org.omnirom.omnistyle1.wavvy
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:105:9-113:20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:107:13-34
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:106:13-34
+activity#org.omnirom.omnistyle1.omni_syed
+ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:115:9-123:20
+	android:label
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:117:13-33
+	android:name
+		ADDED from /home/maxl/android/projects/android_packages_apps_OmniStyle/app/src/main/AndroidManifest.xml:116:13-38

@@ -1,0 +1,7 @@
+#Thu Feb 16 21:36:06 CET 2017
+base.0=/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7c873b88b18d6daec4affbadeb2fa23fd0dec139
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_375cdd553600e34a6bb039f8832e4c0d4543d8b7/classes.dex
+base.1=/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_375cdd553600e34a6bb039f8832e4c0d4543d8b7
+file.0=/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7c873b88b18d6daec4affbadeb2fa23fd0dec139/classes.dex
