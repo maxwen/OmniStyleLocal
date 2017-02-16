@@ -248,17 +248,18 @@ containing a value of this type.
     public static final class id {
         public static final int browse_progress=0x7f090004;
         public static final int content_browse=0x7f090000;
-        public static final int header_image=0x7f090008;
-        public static final int header_image_card=0x7f090007;
-        public static final int header_name=0x7f090009;
+        public static final int header_image=0x7f090009;
+        public static final int header_image_card=0x7f090008;
+        public static final int header_name=0x7f09000a;
         public static final int location_select=0x7f090005;
         public static final int meta_creator=0x7f090002;
+        public static final int no_network_message=0x7f090007;
         public static final int package_images=0x7f090003;
         public static final int package_select=0x7f090001;
-        public static final int wallpaper_creator=0x7f09000c;
-        public static final int wallpaper_image=0x7f09000a;
+        public static final int wallpaper_creator=0x7f09000d;
+        public static final int wallpaper_image=0x7f09000b;
         public static final int wallpaper_images=0x7f090006;
-        public static final int wallpaper_name=0x7f09000b;
+        public static final int wallpaper_name=0x7f09000c;
     }
     public static final class layout {
         public static final int content_browse=0x7f030000;
@@ -275,17 +276,18 @@ containing a value of this type.
         public static final int header_creator_label=0x7f080004;
         public static final int no_crop_activity_dialog_text=0x7f080005;
         public static final int no_crop_activity_dialog_title=0x7f080006;
-        public static final int omni_walls=0x7f080007;
-        public static final int scrolling_wall_dialog_text=0x7f080008;
-        public static final int scrolling_wall_dialog_title=0x7f080009;
-        public static final int scrolling_wall_no=0x7f08000a;
-        public static final int scrolling_wall_yes=0x7f08000b;
-        public static final int wallpaper_location_local=0x7f08000c;
-        public static final int wallpaper_location_remote=0x7f08000d;
-        public static final int wallpaper_type_both=0x7f08000e;
-        public static final int wallpaper_type_dialog_title=0x7f08000f;
-        public static final int wallpaper_type_lock=0x7f080010;
-        public static final int wallpaper_type_system=0x7f080011;
+        public static final int no_network_message=0x7f080007;
+        public static final int omni_walls=0x7f080008;
+        public static final int scrolling_wall_dialog_text=0x7f080009;
+        public static final int scrolling_wall_dialog_title=0x7f08000a;
+        public static final int scrolling_wall_no=0x7f08000b;
+        public static final int scrolling_wall_yes=0x7f08000c;
+        public static final int wallpaper_location_local=0x7f08000d;
+        public static final int wallpaper_location_remote=0x7f08000e;
+        public static final int wallpaper_type_both=0x7f08000f;
+        public static final int wallpaper_type_dialog_title=0x7f080010;
+        public static final int wallpaper_type_lock=0x7f080011;
+        public static final int wallpaper_type_system=0x7f080012;
     }
     public static final class style {
         public static final int Base_CardView=0x7f040001;

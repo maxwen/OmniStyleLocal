@@ -33,6 +33,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.graphics.drawable.Drawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -84,7 +86,7 @@ public class BrowseWallsActivity extends Activity {
     private static final String WALLPAPER_THUMB_URI = "https://dl.omnirom.org/images/wallpapers/thumbs/";
     private static final String WALLPAPER_FULL_URI = "https://dl.omnirom.org/images/wallpapers/";
 
-    private static final boolean DEBUG = true;
+    private static final boolean DEBUG = false;
     private List<WallpaperInfo> mWallpaperList;
     private List<RemoteWallpaperInfo> mWallpaperUrlList;
     private Resources mRes;
@@ -96,6 +98,8 @@ public class BrowseWallsActivity extends Activity {
     private Runnable mDoAfter;
     private Spinner mLocationSelect;
     private int mCurrentLocation;
+    private TextView mNoNetworkMessage;
+    private ProgressBar mProgressBar;
 
     private static final int HTTP_READ_TIMEOUT = 30000;
     private static final int HTTP_CONNECTION_TIMEOUT = 30000;
@@ -128,7 +132,11 @@ public class BrowseWallsActivity extends Activity {
             int resId = mRes.getIdentifier(wi.mImage, "drawable", mPackageName);
 
             if (resId != 0) {
-                Picasso.with(BrowseWallsActivity.this).load(resId).into(holder.mWallpaperImage);
+                Picasso.with(BrowseWallsActivity.this)
+                        .load(resId)
+                        .resize(mWallpaperPreviewSize, mWallpaperPreviewSize)
+                        .centerCrop()
+                        .into(holder.mWallpaperImage);
             } else {
                 holder.mWallpaperImage.setImageDrawable(null);
             }
@@ -157,13 +165,9 @@ public class BrowseWallsActivity extends Activity {
 
             Picasso.with(BrowseWallsActivity.this).load(wi.mThumbUri).into(holder.mWallpaperImage);
 
-            try {
-                holder.mWallpaperName.setText(wi.mImage);
-                //holder.mWallpaperCreator.setVisibility(TextUtils.isEmpty(wi.mCreator) ? View.GONE : View.VISIBLE);
-                //holder.mWallpaperCreator.setText(wi.mCreator);
-            } catch (Exception e) {
-                holder.mWallpaperName.setText("");
-            }
+            holder.mWallpaperName.setText(wi.mImage);
+            //holder.mWallpaperCreator.setVisibility(TextUtils.isEmpty(wi.mCreator) ? View.GONE : View.VISIBLE);
+            //holder.mWallpaperCreator.setText(wi.mCreator);
             return convertView;
         }
     }
@@ -203,6 +207,8 @@ public class BrowseWallsActivity extends Activity {
         mWallpaperUrlList = new ArrayList<RemoteWallpaperInfo>();
         mWallpaperPreviewSize = Math.round(180 * getResources().getDisplayMetrics().density);
         mLocationSelect = (Spinner) findViewById(R.id.location_select);
+        mNoNetworkMessage = (TextView) findViewById(R.id.no_network_message);
+        mProgressBar = (ProgressBar) findViewById(R.id.browse_progress);
 
         String[] locationList = getResources().getStringArray(R.array.wallpaper_location_list);
         ArrayAdapter<CharSequence> adapter = new ArrayAdapter(this,
@@ -215,8 +221,17 @@ public class BrowseWallsActivity extends Activity {
                 mCurrentLocation = position;
                 if (position == 0) {
                     mWallpaperView.setAdapter(mAdapter);
+                    mNoNetworkMessage.setVisibility(View.GONE);
+                    mProgressBar.setVisibility(View.GONE);
                 } else {
-                    mWallpaperView.setAdapter(mAdapterRemote);
+                    if (isNetworkAvailable()) {
+                        mNoNetworkMessage.setVisibility(View.GONE);
+                        mWallpaperView.setAdapter(mAdapterRemote);
+                        mProgressBar.setVisibility(View.VISIBLE);
+                        new FetchWallpaperTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+                    } else {
+                        mNoNetworkMessage.setVisibility(View.VISIBLE);
+                    }
                 }
             }
 
@@ -255,7 +270,6 @@ public class BrowseWallsActivity extends Activity {
 
             mWallpaperView.setAdapter(mAdapter);
             mAdapter.notifyDataSetChanged();
-            new FetchWallpaperTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         } catch (Exception e) {
             Log.e(TAG, "init failed", e);
         }
@@ -510,6 +524,7 @@ public class BrowseWallsActivity extends Activity {
         }
 
         protected void onPostExecute(Void feed) {
+            mProgressBar.setVisibility(View.GONE);
             mAdapterRemote.notifyDataSetChanged();
         }
     }
@@ -640,6 +655,16 @@ public class BrowseWallsActivity extends Activity {
             d.show();
         } else {
             doCallCropActivity(uri, dispSize, dispSize.x, dispSize.y);
+        }
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
+        if (activeNetwork != null && activeNetwork.isConnected()) {
+            return true;
+        } else {
+            return false;
         }
     }
 }

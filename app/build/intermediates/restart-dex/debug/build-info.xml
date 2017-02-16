@@ -5,40 +5,54 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="22268294274408"
+    timestamp="28913216431277"
     token="-8504593008467506852"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="146" />
+        duration="126" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="866" />
     <task
         name="instant-run-transform"
-        duration="54" />
+        duration="57" />
     <task
         name="verifier"
-        duration="2" />
+        duration="7" />
 
     <artifact
-        location="/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-        type="DEX" />
+        location="/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="21432809263204"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="27896044104874"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="22268294274408"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="28379502770105"
+        verifier="FIELD_ADDED" >
+        <artifact
+            location="/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="28892040149030"
+        verifier="FIELD_TYPE_CHANGE" >
         <artifact
             location="/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="28913216431277"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/maxl/android/projects/android_packages_apps_OmniStyle/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
